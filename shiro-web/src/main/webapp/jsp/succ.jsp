@@ -6,6 +6,6 @@
     <title>Hello Page</title>
 </head>
 <body>
-succ
+success
 </body>
 </html>

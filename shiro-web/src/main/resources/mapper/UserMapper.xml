@@ -22,4 +22,8 @@
     WHERE username like CONCAT("%",#{userName},"%")
     and password = #{password};
   </select>
+
+  <insert id="insert" parameterType="com.shiro.xiao.dream.model.UserDo">
+    INSERT INTO users(username, password, password_salt) VALUES (#{userName}, #{password}, #{passwordSalt});
+  </insert>
 </mapper>

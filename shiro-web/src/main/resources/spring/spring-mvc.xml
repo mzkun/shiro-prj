@@ -22,7 +22,12 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <!--<mvc:resources mapping="/js/**" location="/js/" />-->
-
+    <!-- 配置处理器映射器 适配器 -->
+    <mvc:annotation-driven />
+    <!-- enable autowire 向容器自动注册 -->
+    <context:annotation-config/>
+    <mvc:resources mapping="/js/**" location="/js/" />
+    <!--<context:property-placeholder location="classpath:/shiro.ini"/>-->
+    <!--<import resource="classpath*:/spring/spring-shiro.xml" />-->
 
 </beans>
